@@ -1,4 +1,4 @@
-```
+
 def load_frozen_graph(file_path):
     with tf.Graph() as g:
         g_def = tf.GraphDef()
@@ -6,4 +6,3 @@ def load_frozen_graph(file_path):
             g_def.ParseFromString(f.read())
         tf.import_graph_def(g_def)
     return g
-```
